@@ -104,8 +104,8 @@ class Generator():
 class Transpiler():
     @staticmethod
     def registerGlobalHook(hookName: str):
-        inputfile = open('index copy.ts', 'r').readlines()
-        write_file = open('index copy.ts','w')
+        inputfile = open('src/store/index.ts', 'r').readlines()
+        write_file = open('src/store/index.ts','w')
         text = ''
         for line in inputfile:
             write_file.write(line)
